@@ -1,5 +1,5 @@
 var songs = ['Abandoned.mp3', 'Existence.mp3', 'anxiety.mp3', 
-             'Echos.mp3', 'Horror Show.mp3', 'Insanity.mp3',
+             'Echoes.mp3', 'Horror Show.mp3', 'Insanity.mp3',
              '[insert genre here].mp3','Shell.mp3', 'SlyphStorm.mp3'               
 ]
 var names = ['Abandoned', 'Existence', 'Anxiety', 
