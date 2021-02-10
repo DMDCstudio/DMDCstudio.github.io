@@ -11,18 +11,20 @@
 	<body>
 		<div class="introduction">
 			<div class="navigation">
-				<div class="logo">
-					<a href="https://www.youtube.com/channel/UCxeK_EM8_hSvJ3lD20Ya4Wg" target="blank"><img src="images/logo.svg" height="88px"></a>
-				</div>
-				<div class="song-name">
-					<p id="song-name">Abandoned</p>
-					<p id="artist">By DMDC</p>
+				<div class="container">
+					<div class="logo">
+						<a href="https://www.youtube.com/channel/UCxeK_EM8_hSvJ3lD20Ya4Wg" target="blank"><img src="images/logo.svg" height="88px"></a>
+					</div>
+					<div class="song-name">
+						<p id="song-name">Abandoned</p>
+						<p id="artist">By DMDC</p>
+					</div>
 				</div>
 				<div class="song-player">
 					<audio id="player" src="Abandoned.mp3"  
 					ontimeupdate="document.getElementById('bar').value = Math.floor(this.currentTime); document.getElementById('bar').max = Math.floor(this.duration);">
 					<source src="Abandoned.mp3" type="audio/mp3" id="source"></audio>
-					<div class="">
+					<div class="controls">
 						
 						<a onclick="back()" class="back"><img src="images/backward.png" height="35px"/></a> 
 						<a onclick="document.getElementById('player').play()" class="play"><img src="images/play.png" height="35px"/></a> 
@@ -49,7 +51,9 @@
 				<h1>COVERS</h1>
 				<div class="cover">
 					<a href="https://www.youtube.com/watch?v=BaiPq6aRWUU" target="blank">	
+						<div>	
 						<img src="images/cover1.jpg" height="200px"/>
+						</div>
 					</a>
 					<a href="https://www.youtube.com/watch?v=BaiPq6aRWUU" target="blank">
 						<h2>SlyphStorm - Octavia's Overture</h2>
@@ -57,7 +61,9 @@
 				</div>
 				<div class="cover">
 					<a href="https://www.youtube.com/watch?v=ucgM2Idtq4s" target="blank">	
+						<div>	
 						<img src="images/cover2.jpg" height="200px"/>
+						</div>
 					</a>
 					<a href="https://www.youtube.com/watch?v=ucgM2Idtq4s" target="blank">
 						<h2>GatoPaint- The Puppet</h2>
@@ -65,7 +71,9 @@
 				</div>
 				<div class="cover">
 					<a href="https://www.youtube.com/watch?v=A8p3TbKWQ-U" target="blank">	
+						<div>
 						<img src="images/cover3.jpg" height="200px"/>
+						</div>
 					</a>
 					<a href="https://www.youtube.com/watch?v=A8p3TbKWQ-U" target="blank">
 						<h2>NateWantsToBattle - The Evil King</h2>
@@ -76,7 +84,9 @@
 				<h1>ORIGINAL CONTENT</h1>
 				<div class="original-content">
 					<a href="https://www.youtube.com/watch?v=5dYvdsUSlMY" target="blank">
+						<div>
 						<img src="images/oc1.png" height="200px"/>
+						</div>
 					</a>
 					<a href="https://www.youtube.com/watch?v=5dYvdsUSlMY" target="blank">	
 						<h2>DMDC - Existence</h2>
@@ -86,7 +96,9 @@
 				<div class="original-content">
 
 					<a href="https://www.youtube.com/watch?v=Sf3y5bnUJe8" target="blank">	
+						<div>
 						<img src="images/oc2.webp" height="200px"/>
+						</div>
 					</a>
 					<a href="https://www.youtube.com/watch?v=Sf3y5bnUJe8" target="blank">	
 						<h2>DMDC - Abandoned</h2>
