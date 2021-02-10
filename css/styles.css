@@ -15,6 +15,11 @@ background-color: #292929;
     border-bottom: solid 1px #222222;
 }
 
+.container {
+    display: flex;
+}
+
+
 .navigation ul li{
     display: inline;
     
@@ -138,8 +143,7 @@ background-color: #292929;
 
     .original-content h2 {
         padding-left: 50px;
-        margin-left: auto;
-        margin-right: auto;
+
     }
 
     .oc a {
@@ -193,4 +197,45 @@ input[type="range"]::-ms-fill-lower {
 }
 input[type="range"]::-ms-fill-upper {  
   background-color: #1;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .navigation {
+        height: 172px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .container {
+        padding-bottom: 25px;
+    }
+
+    .title {
+        font-size: 45px;
+    }
+
+    .cover {
+        display:inline;
+        
+    }
+    .cover h2 {
+        padding-left: 0px;
+    }
+
+    .original-content {
+        display:inline;
+    }
+
+    .original-content h2 {
+        padding-left: 0px;
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        padding-bottom: 5px;
+    }
 }
