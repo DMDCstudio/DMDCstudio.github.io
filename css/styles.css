@@ -196,7 +196,7 @@ input[type="range"]::-ms-fill-lower {
   background-color: #ff5500; 
 }
 input[type="range"]::-ms-fill-upper {  
-  background-color: #1;
+  background-color: #111111;
 }
 
 
