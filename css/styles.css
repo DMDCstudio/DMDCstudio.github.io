@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #ff5500;
+    font-family: Arial, Helvetica, sans-serif;
+background-color: #292929;
+}
+
+.navigation {
+    display: flex;
+    height: 88px;
+    width: 100%;
+    background-color: #292929;
+    position: fixed;
+    border-bottom: solid 1px #222222;
+}
+
+.navigation ul li{
+    display: inline;
+    
+}
+
+    .logo {
+        height: 88px;
+        width: 88px;
+        background-color: #ff5500;
+
+    }
+
+    .song-player {
+        display: inline;
+        width: 800px;
+        margin: auto;
+    }
+
+    .player {
+        height: 10px;
+        width: 50px;
+        background-color: black;
+    }
+
+    .play:hover {
+        cursor: pointer;
+    }
+    
+    .pause:hover {
+        cursor: pointer;
+    }
+    
+    .vol-up:hover {
+        cursor: pointer;
+    }
+    
+    .vol-down:hover {
+        cursor: pointer;
+    }
+    
+    .next:hover {
+        cursor: pointer;
+    }
+    
+    .back:hover {
+        cursor: pointer;
+    }
+   
+    .song-name {
+        padding-left: 35px;
+    }
+
+    .padding {
+        padding-right: 30px;
+    }
+
+    .padding-left {
+        padding-left: 30px;
+    }
+
+.introduction {
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../images/bg.jpg);
+}
+
+    .title {
+        width: 100%;
+        font-size: 72px;
+        margin-left: auto;
+        margin-right:auto;
+        padding: 10% 0;
+        text-align:center;
+    }
+
+.main {
+    background-color: #292929;
+    width:100%;
+    margin: auto;
+}
+
+.covers {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+    .cover {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        padding: 50px;
+    }
+
+    .cover h2 {
+        padding-left: 50px;
+    }
+
+    .covers a {
+        color:#ff5500;
+        text-decoration: none;
+    }
+
+.oc {
+    display: inline;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .original-content {
+        
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        padding: 50px;
+    }
+
+    .original-content h2 {
+        padding-left: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .oc a {
+        color:#ff5500;
+        text-decoration: none;
+    }
+footer {
+    text-align: center;
+    padding: 15px;
+    border-top: solid 1px #222222;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+    position: relative; 
+    bottom: 13px;
+      overflow: hidden;
+      width: 150px;
+      -webkit-appearance: none;
+      background-color: #222222;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #292929;
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: pointer;
+      background: #434343;
+      box-shadow: -80px 0 0 80px #ff5500;
+    }
+
+}
+input[type="range"]::-moz-range-progress {
+  background-color: #ff5500; 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: #292929;
+}
+
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #ff5500; 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: #1;
+}
