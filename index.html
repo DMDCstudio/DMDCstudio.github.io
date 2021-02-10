@@ -39,6 +39,36 @@
 					
 					</div>
 				</div>
+				<div class="mobile-nav-bar" onclick="openNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+						<div class="mobile-song-player">
+							<audio id="player" src="Abandoned.mp3"  
+							ontimeupdate="document.getElementById('bar').value = Math.floor(this.currentTime); document.getElementById('bar').max = Math.floor(this.duration);">
+							<source src="Abandoned.mp3" type="audio/mp3" id="source"></audio>
+							<div class="controls">
+								
+								<a onclick="back()" class="back"><img src="images/backward.png" height="35px"/></a> 
+								<a onclick="document.getElementById('player').play()" class="play"><img src="images/play.png" height="35px"/></a> 
+								<a onclick="next()" class="next"><img src="images/forward.png" height="35px" class="padding"/></a> 
+							
+								<a onclick="document.getElementById('player').pause()" class="pause"><img src="images/pause.png" height="35px" class="padding"/></a>
+								
+								<input type="range" name="quantity" min="1" max="100" value="1" id="bar">						
+								
+								<a onclick="document.getElementById('player').volume -= 0.1" class="vol-down"><img src="images/vol-down.png" height="35px" class="padding-left"/></a> 
+								<a onclick="document.getElementById('player').volume += 0.1" class="vol-up"><img src="images/vol-up.png" height="35px"/></a>
+							
+							</div>
+						</div>
+
+                    </div>
+                  </div>
 			</div>
 			<div class="title">
 				<h1>
@@ -114,6 +144,7 @@
 		</footer>
 		<script src="js/timeline.js"></script>
 		<script src="js/next.js"></script>
+		<script src="js/mobileNavBar.js"></script>
 	</body>
 	
 </html>
