@@ -196,14 +196,95 @@ input[type="range"]::-ms-fill-lower {
   background-color: #ff5500; 
 }
 input[type="range"]::-ms-fill-upper {  
-  background-color: #111111;
+  background-color: #1;
 }
 
+.mobile-nav-bar {
+	position: absolute;
+	right: 35px;
+	top: 25px;
+    display: none;
+    cursor: pointer;
+}
 
-@media only screen and (max-width: 900px) {
+	.bar1, .bar2, .bar3 {
+	  width: 35px;
+	  height: 5px;
+	  background-color: #ff5500;
+	  margin: 8px 0;
+	  transition: 0.4s;
+	}
+
+	.change .bar1 {
+	  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	  transform: rotate(-45deg) translate(-9px, 6px);
+	  border-radius: 7px;
+	}
+
+	.change .bar2 {opacity: 0;}
+
+	.change .bar3 {
+	  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+	  transform: rotate(45deg) translate(-8px, -8px);
+	  border-radius: 7px;
+	}
+
+#MobileLinks {
+  display: none;
+  color: red;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #191a1d;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ff5500;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #ff5500;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    right: 25px;
+    top: 0px;
+    font-size: 60px;
+  }
+
+@media only screen and (max-width: 1050px) {
+    .mobile-nav-bar {
+        display: inline-block;
+    }
 
     .navigation {
-        height: 172px;
+        height: 88px;
         position: relative;
         display: inline-block;
     }
@@ -232,6 +313,15 @@ input[type="range"]::-ms-fill-upper {
         padding-left: 0px;
 
     }
+
+    .song-player {
+        display: none;
+    }
+
+    .mobile-song-player {
+        display: inline;
+        height: 88px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -239,3 +329,4 @@ input[type="range"]::-ms-fill-upper {
         padding-bottom: 5px;
     }
 }
+
