@@ -4,12 +4,12 @@ var songs = ['Abandoned.mp3', 'Existence.mp3', 'anxiety.mp3',
 ]
 var names = ['Abandoned', 'Existence', 'Anxiety', 
 'Echos', 'Horror Show', 'Insanity', 
-'[insert genre here]', 'Shell', 'SlyphStorm']
+'[insert genre here]', 'Shell', 'Pegasus Device']
 
 var art = [
 'By DMDC', 'By DMDC', 'By Groundbreaking', 
 'By Groundbreaking', 'CG5 Remix', 'Dolvondo - Insanity', 
-'By Groundbreaking', 'By Groundbreaking', 'By Pegasus Device'
+'By Groundbreaking', 'By Groundbreaking', 'By SlyphStorm'
 ]
 var a = 0
 var x = document.getElementById("player").ended;
